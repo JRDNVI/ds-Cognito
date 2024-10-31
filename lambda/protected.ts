@@ -22,6 +22,7 @@ export const handler: APIGatewayProxyHandlerV2 = async function (event: any) {
     process.env.USER_POOL_ID,
     process.env.REGION!
   );
+  
   console.log(JSON.stringify(verifiedJwt));
   return {
     statusCode: 200,
